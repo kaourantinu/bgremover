@@ -4,7 +4,7 @@ export async function POST(req: Request) {
 
     const formDataFlag = await req.formData()
 
-    const apiKeys = ['V7pAYHCvYVBqdMmWaqfqMS5s', 'oEY68JYCbyDpUEdBuXQUNe7q', 'LgPFCSa4UeHhM5XjKpgHpEwf'];
+    const apiKeys = [`${process.env.REMOVEBG_API_KEY_1}`, `${process.env.REMOVEBG_API_KEY_2}`, `${process.env.REMOVEBG_API_KEY_3}`];
 
     const apiUrl = 'https://api.remove.bg/v1.0/removebg';
 
